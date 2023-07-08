@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FlyoutPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TDMPW_412_PR03.PaginaFlyout"
+             Title="Inicio"
+             FlyoutLayoutBehavior="Popover"
+            
+            >
+
+    <FlyoutPage.Flyout>
+        <ContentPage Title="Flyout" BackgroundColor="#C8E0CA">
+
+            <Grid ColumnDefinitions="1*" RowDefinitions=".25*, .12*, .12*, .12*, .6*">
+
+                <Image
+                    Source="coin.png"
+                    HeightRequest="100"
+
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    />
+
+                <Button
+                    Text="Dolar"
+                    FontSize="Title"
+                    x:Name="btnDolar"
+                    Margin="20,9"
+
+                    VerticalOptions="FillAndExpand"
+                    HorizontalOptions="FillAndExpand"
+
+                    Grid.Row="1"
+                    Grid.Column="0"
+
+                    Clicked="btnDolar_Clicked"
+                    />
+
+                <Button
+                    Text="Euro"
+                    FontSize="Title"
+                    x:Name="btnEuro"
+                    Margin="20,9"
+
+                    VerticalOptions="FillAndExpand"
+                    HorizontalOptions="FillAndExpand"
+
+                    Grid.Row="2"
+                    Grid.Column="0"
+
+                    Clicked="btnEuro_Clicked"
+                    />
+
+                <Button
+                    Text="Yen"
+                    FontSize="Title"
+                    x:Name="btnYen"
+                    Margin="20,9"
+                    
+                    VerticalOptions="FillAndExpand"
+                    HorizontalOptions="FillAndExpand"
+
+                    Grid.Row="3"
+                    Grid.Column="0"
+
+                    Clicked="btnYen_Clicked"
+                    />
+
+            </Grid>
+
+        </ContentPage>
+    </FlyoutPage.Flyout>
+        
+    <FlyoutPage.Detail>
+        <ContentPage Title="Detalle">
+
+            <Grid ColumnDefinitions=".33*, .33*, .33*" RowDefinitions=".25*, .25*, .25*, .25*">
+
+                <Label
+                    FontSize="Title"
+                    SemanticProperties.HeadingLevel="Level1"
+                    TextColor="Black"
+                    FontAttributes="Bold"
+                    VerticalTextAlignment="Center"
+                    HorizontalTextAlignment="Center"
+
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+
+                    Grid.Row="0"
+                    Grid.ColumnSpan="3"
+                    >CONVERSIÓN DE MONEDA</Label>
+
+                <Label
+                    FontSize="Subtitle"
+                    SemanticProperties.HeadingLevel="Level2"
+                    TextColor="Black"
+                    FontAttributes="Bold"
+
+                    HorizontalOptions="Center"
+                    VerticalOptions="Start"
+
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    >BIENVENIDE</Label>
+
+                <Image
+                    Source="cat.png"
+
+
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+
+                    Grid.Row="3"
+                    Grid.RowSpan="2"
+                    Grid.Column="1"
+                    />
+
+            </Grid>
+
+            
+        </ContentPage>
+    </FlyoutPage.Detail>
+
+</FlyoutPage>
